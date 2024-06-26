@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>随机图片api - 远望世界&#39; Blog</title><meta name="Description" content="远望世界&#39; Blog"><meta property="og:url" content="https://blog.qiang.uk/%E9%9A%8F%E6%9C%BA%E5%9B%BE%E7%89%87api%E6%8E%A5%E5%8F%A3/">
+  <meta property="og:site_name" content="远望世界&#39; Blog">
+  <meta property="og:title" content="随机图片api">
+  <meta property="og:description" content="一、api整合 樱道 网站：https://img.r10086.com/ 调用地址： 二次元动漫(1-18)：https://api.r10086">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2022-12-26T07:00:00+08:00">
+    <meta property="article:modified_time" content="2022-12-26T07:00:00+08:00">
+    <meta property="article:tag" content="随机图片api">
+    <meta property="og:image" content="https://blog.qiang.uk/avatar.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://blog.qiang.uk/avatar.png">
+  <meta name="twitter:title" content="随机图片api">
+  <meta name="twitter:description" content="一、api整合 樱道 网站：https://img.r10086.com/ 调用地址： 二次元动漫(1-18)：https://api.r10086">
+<meta name="application-name" content="远望世界&#39; Blog">
+<meta name="apple-mobile-web-app-title" content="远望世界&#39; Blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://blog.qiang.uk/%E9%9A%8F%E6%9C%BA%E5%9B%BE%E7%89%87api%E6%8E%A5%E5%8F%A3/" /><link rel="prev" href="https://blog.qiang.uk/nginx%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/" /><link rel="next" href="https://blog.qiang.uk/css3%E6%AF%9B%E7%8E%BB%E7%92%83%E6%95%88%E6%9E%9C/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "随机图片api",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/blog.qiang.uk\/%E9%9A%8F%E6%9C%BA%E5%9B%BE%E7%89%87api%E6%8E%A5%E5%8F%A3\/"
+        },"genre": "posts","keywords": "随机图片api","wordcount":  2790 ,
+        "url": "https:\/\/blog.qiang.uk\/%E9%9A%8F%E6%9C%BA%E5%9B%BE%E7%89%87api%E6%8E%A5%E5%8F%A3\/","datePublished": "2022-12-26T07:00:00+08:00","dateModified": "2022-12-26T07:00:00+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "远望世界"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="远望世界&#39; Blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>远望世界&#39; Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/"> 主页 </a><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://note.qiang.uk/" rel="noopener noreffer" target="_blank"> 📝随记 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="远望世界&#39; Blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>远望世界&#39; Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/" title="">主页</a><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://note.qiang.uk/" title="" rel="noopener noreffer" target="_blank">📝随记</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">随机图片api</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://github.com/yuanwangshijie" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>远望世界</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E5%B7%A5%E5%85%B7/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>工具</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-12-26">2022-12-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 2790 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 6 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#一api整合">一、api整合</a>
+      <ul>
+        <li><a href="#樱道">樱道</a></li>
+        <li><a href="#保罗">保罗</a></li>
+        <li><a href="#东方project">东方Project</a></li>
+        <li><a href="#likepoems随机图">likepoems随机图</a></li>
+      </ul>
+    </li>
+    <li><a href="#二怎么自制随机图">二、怎么自制随机图</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="一api整合">一、api整合</h2>
+<h3 id="樱道">樱道</h3>
+<blockquote>
+<p>网站：https://img.r10086.com/</p>
+</blockquote>
+<ul>
+<li>调用地址：</li>
+<li>二次元动漫(1-18)：https://api.r10086.com/img-api.php?type=动漫综合1</li>
+<li>东京食尸鬼(横竖屏)：https://api.r10086.com/img-api.php?type=东京食尸鬼横屏系列1</li>
+<li>Fate(横竖屏)：https://api.r10086.com/img-api.php?type=Fate横屏系列1</li>
+<li>为美好世界献上祝福(横竖屏)：https://api.r10086.com/img-api.php?type=为美好世界献上祝福横屏系列1</li>
+<li>某科学的超电磁炮(横竖屏)：https://api.r10086.com/img-api.php?type=某科学的超电磁炮横屏系列1</li>
+<li>原神(横竖屏)：https://api.r10086.com/img-api.php?type=原神横屏系列1</li>
+<li>我的世界：https://api.r10086.com/img-api.php?type=我的世界系列1</li>
+<li>神奇宝贝(横竖屏)：https://api.r10086.com/img-api.php?type=神奇宝贝横屏系列1</li>
+<li>龙珠(横竖屏)：https://api.r10086.com/img-api.php?type=龙珠横屏系列1</li>
+<li>罪恶王冠(横竖屏)：https://api.r10086.com/img-api.php?type=罪恶王冠横屏系列1</li>
+<li>鬼灭之刃(横竖屏)：https://api.r10086.com/img-api.php?type=鬼灭之刃横屏系列1</li>
+<li>火影忍者(横竖屏)：https://api.r10086.com/img-api.php?type=火影忍者横屏系列1</li>
+<li>海贼王(横竖屏)：https://api.r10086.com/img-api.php?type=海贼王横屏系列1</li>
+<li>进击的巨人(横竖屏)：https://api.r10086.com/img-api.php?type=进击的巨人横屏系列1</li>
+<li>从零开始的异世界生活(横竖屏)：https://api.r10086.com/img-api.php?type=从零开始的异世界生活横屏系列1</li>
+<li>刀剑神域(横竖屏)：https://api.r10086.com/img-api.php?type=刀剑神域横屏系列1</li>
+<li>钢之炼金术师(横竖屏)：https://api.r10086.com/img-api.php?type=钢之炼金术师横屏系列1</li>
+<li>妖精的尾巴(横竖屏)：https://api.r10086.com/img-api.php?type=妖精的尾巴横屏系列1</li>
+<li>缘之空(横竖屏)：https://api.r10086.com/img-api.php?type=缘之空横屏系列1</li>
+<li>东方project：https://api.r10086.com/img-api.php?type=东方project1</li>
+<li>猫娘：https://api.r10086.com/img-api.php?type=猫娘1</li>
+<li>风景(1-10)：https://api.r10086.com/img-api.php?type=风景系列1</li>
+<li>物语(1-2)：https://api.r10086.com/img-api.php?type=物语系列1</li>
+<li>少女前线：https://api.r10086.com/img-api.php?type=少女前线1</li>
+<li>明日方舟(1-2)：https://api.r10086.com/img-api.php?type=明日方舟1</li>
+<li>重装战姬：https://api.r10086.com/img-api.php?type=重装战姬1</li>
+<li>P站(1-4)：https://api.r10086.com/img-api.php?type=P站系列1</li>
+<li>CG(1-5)：https://api.r10086.com/img-api.php?type=CG系列1</li>
+<li>守望先锋：https://api.r10086.com/img-api.php?type=守望先锋</li>
+<li>王者荣耀：https://api.r10086.com/img-api.php?type=王者荣耀</li>
+<li>少女写真(1-6)：https://api.r10086.com/img-api.php?type=少女写真1</li>
+<li>死库水萝莉：https://api.r10086.com/img-api.php?type=死库水萝莉</li>
+<li>萝莉：https://api.r10086.com/img-api.php?type=萝莉</li>
+<li>极品美女图片：https://api.r10086.com/img-api.php?type=极品美女图片</li>
+<li>日本COS中国COS：https://api.r10086.com/img-api.php?type=日本COS中国COS</li>
+<li>橘里橘气(横竖屏)：https://api.r10086.com/img-api.php?type=橘里橘气横屏系列1</li>
+</ul>
+<h3 id="保罗">保罗</h3>
+<blockquote>
+<p>网站：https://api.paugram.com/help/wallpaper</p>
+</blockquote>
+<ul>
+<li>调用地址：https://api.paugram.com/wallpaper/</li>
+</ul>
+<h3 id="东方project">东方Project</h3>
+<ul>
+<li>调用地址：https://img.paulzzh.com/touhou/random</li>
+</ul>
+<h3 id="likepoems随机图">likepoems随机图</h3>
+<blockquote>
+<p>网站：https://api.likepoems.com/</p>
+</blockquote>
+<ul>
+<li>调用地址：</li>
+<li>二次元PC壁纸：https://api.likepoems.com/img/pc</li>
+<li>二次元PE壁纸：https://api.likepoems.com/img/pe</li>
+<li>mc酱壁纸：https://api.likepoems.com/img/mc</li>
+<li>pixiv壁纸：https://api.likepoems.com/img/pixiv</li>
+<li>nature壁纸：https://api.likepoems.com/img/nature</li>
+<li>必应壁纸：https://api.likepoems.com/img/bing</li>
+</ul>
+<h2 id="二怎么自制随机图">二、怎么自制随机图</h2>
+<ol>
+<li>准备图片—&gt;书写路径—&gt;书写php文件</li>
+<li>在img文件夹里新建img.txt，文件中直接写图片的URL地址，如：</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">https://static.likepoems.com/2020/10/06/385ea1c4c8b4fbac57f5a0aa61f033761.jpg
+</span></span><span class="line"><span class="cl">https://static.likepoems.com/2021/06/12/20210126104630786.png
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="3">
+<li>新建index.php文件。文件内容如下：</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl"><span class="c1">//存放api随机图链接的文件名img.txt
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$filename</span> <span class="o">=</span> <span class="s2">&#34;img.txt&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">file_exists</span><span class="p">(</span><span class="nv">$filename</span><span class="p">)){</span>
+</span></span><span class="line"><span class="cl">    <span class="k">die</span><span class="p">(</span><span class="s1">&#39;文件不存在&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">//从文本获取链接
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$pics</span> <span class="o">=</span> <span class="p">[];</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$fs</span> <span class="o">=</span> <span class="nx">fopen</span><span class="p">(</span><span class="nv">$filename</span><span class="p">,</span> <span class="s2">&#34;r&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="nx">feof</span><span class="p">(</span><span class="nv">$fs</span><span class="p">)){</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$line</span><span class="o">=</span><span class="nx">trim</span><span class="p">(</span><span class="nx">fgets</span><span class="p">(</span><span class="nv">$fs</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span><span class="nv">$line</span><span class="o">!=</span><span class="s1">&#39;&#39;</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">array_push</span><span class="p">(</span><span class="nv">$pics</span><span class="p">,</span> <span class="nv">$line</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">//从数组随机获取链接
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$pic</span> <span class="o">=</span> <span class="nv">$pics</span><span class="p">[</span><span class="nx">array_rand</span><span class="p">(</span><span class="nv">$pics</span><span class="p">)];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">//返回指定格式
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$type</span><span class="o">=</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="k">switch</span><span class="p">(</span><span class="nv">$type</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">//JSON返回
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">case</span> <span class="s1">&#39;json&#39;</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">header</span><span class="p">(</span><span class="s1">&#39;Content-type:text/json&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">die</span><span class="p">(</span><span class="nx">json_encode</span><span class="p">([</span><span class="s1">&#39;pic&#39;</span><span class="o">=&gt;</span><span class="nv">$pic</span><span class="p">]));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">default</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">die</span><span class="p">(</span><span class="nx">header</span><span class="p">(</span><span class="s2">&#34;Location: </span><span class="si">$pic</span><span class="s2">&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="4">
+<li>然后放在服务器里面的api文件夹里，绑定域名，记得开启php环境</li>
+<li>访问路径：你的域名/api/img</li>
+</ol>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2022-12-26</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/%E9%9A%8F%E6%9C%BA%E5%9B%BE%E7%89%87api%E6%8E%A5%E5%8F%A3/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://blog.qiang.uk/%E9%9A%8F%E6%9C%BA%E5%9B%BE%E7%89%87api%E6%8E%A5%E5%8F%A3/" data-title="随机图片api" data-hashtags="随机图片api"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://blog.qiang.uk/%E9%9A%8F%E6%9C%BA%E5%9B%BE%E7%89%87api%E6%8E%A5%E5%8F%A3/" data-title="随机图片api"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E9%9A%8F%E6%9C%BA%E5%9B%BE%E7%89%87api/">随机图片api</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/nginx%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/" class="prev" rel="prev" title="Nginx详细教程"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Nginx详细教程</a>
+            <a href="/css3%E6%AF%9B%E7%8E%BB%E7%92%83%E6%95%88%E6%9E%9C/" class="next" rel="next" title="CSS3毛玻璃效果">CSS3毛玻璃效果<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.128.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/yuanwangshijie" target="_blank">远望世界</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/lightgallery/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.stemmer.support.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.zh.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/mhchem.min.js"></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","lunrLanguageCode":"zh","lunrSegmentitURL":"/lib/lunr/lunr.segmentit.js","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
