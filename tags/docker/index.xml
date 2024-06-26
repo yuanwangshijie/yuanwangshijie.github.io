@@ -4,10 +4,10 @@
         <link>https://blog.qiang.uk/tags/docker/</link>
         <description>Docker - 标签 - 远望世界&#39; Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>yuanwangshijie@gmail.com (远望世界)</managingEditor>
-            <webMaster>yuanwangshijie@gmail.com (远望世界)</webMaster><lastBuildDate>Wed, 01 Feb 2023 07:00:00 &#43;0800</lastBuildDate><atom:link href="https://blog.qiang.uk/tags/docker/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>yuanwangshijie@gmail.com (远望世界)</webMaster><lastBuildDate>Wed, 01 Feb 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://blog.qiang.uk/tags/docker/" rel="self" type="application/rss+xml" /><item>
     <title>好用的Docker应用汇总</title>
     <link>https://blog.qiang.uk/%E5%A5%BD%E7%94%A8%E7%9A%84docker%E5%BA%94%E7%94%A8%E6%B1%87%E6%80%BB/</link>
-    <pubDate>Wed, 01 Feb 2023 07:00:00 &#43;0800</pubDate>
+    <pubDate>Wed, 01 Feb 2023 00:00:00 &#43;0000</pubDate>
     <author>远望世界</author>
     <guid>https://blog.qiang.uk/%E5%A5%BD%E7%94%A8%E7%9A%84docker%E5%BA%94%E7%94%A8%E6%B1%87%E6%80%BB/</guid>
     <description><![CDATA[本文收集一些比较有趣的Docker应用，镜像版本更新可能会导致脚本或配置失效，如果无法使用请发邮件给我。 一、安装环境 系统 Ubuntu 已开启 BBR加速 B]]></description>
@@ -15,7 +15,7 @@
 <item>
     <title>Docker常用命令整理</title>
     <link>https://blog.qiang.uk/docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/</link>
-    <pubDate>Sun, 01 May 2022 07:00:00 &#43;0800</pubDate>
+    <pubDate>Sun, 01 May 2022 00:00:00 &#43;0000</pubDate>
     <author>远望世界</author>
     <guid>https://blog.qiang.uk/docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/</guid>
     <description><![CDATA[整理一些常用的Docker命令 本文转自：https://zhuanlan.zhihu.com/p/54946336 一、常用命令 1 2 3 4 5 6 7]]></description>

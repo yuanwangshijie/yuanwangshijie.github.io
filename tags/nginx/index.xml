@@ -4,10 +4,10 @@
         <link>https://blog.qiang.uk/tags/nginx/</link>
         <description>Nginx - 标签 - 远望世界&#39; Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>yuanwangshijie@gmail.com (远望世界)</managingEditor>
-            <webMaster>yuanwangshijie@gmail.com (远望世界)</webMaster><lastBuildDate>Fri, 01 Jul 2022 07:00:00 &#43;0800</lastBuildDate><atom:link href="https://blog.qiang.uk/tags/nginx/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>yuanwangshijie@gmail.com (远望世界)</webMaster><lastBuildDate>Fri, 01 Jul 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://blog.qiang.uk/tags/nginx/" rel="self" type="application/rss+xml" /><item>
     <title>Nginx详细教程</title>
     <link>https://blog.qiang.uk/nginx%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/</link>
-    <pubDate>Fri, 01 Jul 2022 07:00:00 &#43;0800</pubDate>
+    <pubDate>Fri, 01 Jul 2022 00:00:00 &#43;0000</pubDate>
     <author>远望世界</author>
     <guid>https://blog.qiang.uk/nginx%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/</guid>
     <description><![CDATA[一、Nginx介绍 1.1 引言 为什么要学习Nginx 问题1：客户端到底要将请求发送给哪台服务器 问题2：如果所有客户端的请求都发送给了服务器 问题3：]]></description>
