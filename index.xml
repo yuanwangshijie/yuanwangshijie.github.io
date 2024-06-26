@@ -17,7 +17,7 @@
 <item>
     <title>CSS3毛玻璃效果</title>
     <link>https://blog.qiang.uk/2022/12/27/css3%E6%AF%9B%E7%8E%BB%E7%92%83%E6%95%88%E6%9E%9C/</link>
-    <pubDate>Tue, 27 Dec 2022 07:00:00 &#43;0800</pubDate>
+    <pubDate>Tue, 27 Dec 2022 00:00:00 &#43;0000</pubDate>
     <author>远望世界</author>
     <guid>https://blog.qiang.uk/2022/12/27/css3%E6%AF%9B%E7%8E%BB%E7%92%83%E6%95%88%E6%9E%9C/</guid>
     <description><![CDATA[backdrop-filter与filter的区别 filter：模糊内容 backdrop-filter:透过该层的底部元素模糊化 这两个属性的]]></description>
