@@ -180,7 +180,7 @@ services:
 ```yaml
 services:
   mysql:
-    image: mysql
+    image: mysql:lts
     container_name: mysql
     restart: unless-stopped
     ports:
