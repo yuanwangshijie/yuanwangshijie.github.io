@@ -813,11 +813,11 @@ services:
 ```
 
 ### it-tools(开发者工具箱)
-> [镜像地址](https://hub.docker.com/r/qingfeng2336/it-tools) [github地址](https://github.com/CorentinTh/it-tools)
+> [镜像地址](https://hub.docker.com/r/corentinth/it-tools) [github地址](https://github.com/CorentinTh/it-tools)
 ```yaml
 services:
   it-tools:
-    image: qingfeng2336/it-tools
+    image: corentinth/it-tools
     container_name: it-tools
     restart: unless-stopped
     ports:
