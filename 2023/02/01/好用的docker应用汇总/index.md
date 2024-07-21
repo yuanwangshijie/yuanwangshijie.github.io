@@ -799,7 +799,7 @@ services:
 ```yaml
 services:
   pair-drop:
-    image: lscr.io/linuxserver/pairdrop
+    image: linuxserver/pairdrop
     container_name: pair-drop
     restart: unless-stopped
     ports:
@@ -887,7 +887,7 @@ services:
 ```yaml
 services:
   plex:
-    image: lscr.io/linuxserver/plex
+    image: linuxserver/plex
     container_name: plex
     restart: unless-stopped
     network_mode: host
@@ -937,7 +937,7 @@ services:
 ```yaml
 services:
   transmission:
-    image: lscr.io/linuxserver/transmission
+    image: linuxserver/transmission
     container_name: transmission
     restart: unless-stopped
     ports:
