@@ -1,291 +1,358 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="robots" content="noodp" />
-        <title>MarkDown学习笔记 - 远望世界&#39; Blog</title><meta name="Description" content="远望世界&#39; Blog"><meta property="og:url" content="https://blog.qiang.uk/2022/03/01/markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
-  <meta property="og:site_name" content="远望世界&#39; Blog">
-  <meta property="og:title" content="MarkDown学习笔记">
-  <meta property="og:description" content="一、标题 1 2 3 4 5 6 # 一级标题 ## 二级标题 ### 三级标题 #### 四级标题 ##### 五级标题 ###### 六级标题 二级标题 三级标题 四级标题 五级标题 六级标题 二、字体 1 2 3 4 5 6">
-  <meta property="og:locale" content="zh_CN">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2022-03-01T00:00:00+00:00">
-    <meta property="article:modified_time" content="2022-03-01T00:00:00+00:00">
-    <meta property="article:tag" content="MarkDown">
-    <meta property="og:image" content="https://blog.qiang.uk/icons/avatar.png">
+<html lang="zh" dir="auto">
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://blog.qiang.uk/icons/avatar.png">
-  <meta name="twitter:title" content="MarkDown学习笔记">
-  <meta name="twitter:description" content="一、标题 1 2 3 4 5 6 # 一级标题 ## 二级标题 ### 三级标题 #### 四级标题 ##### 五级标题 ###### 六级标题 二级标题 三级标题 四级标题 五级标题 六级标题 二、字体 1 2 3 4 5 6">
-<meta name="application-name" content="远望世界&#39; Blog">
-<meta name="apple-mobile-web-app-title" content="远望世界&#39; Blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/icons/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png"><link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/icons/site.webmanifest"><link rel="canonical" href="https://blog.qiang.uk/2022/03/01/markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" /><link rel="next" href="https://blog.qiang.uk/2022/05/01/docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>MarkDown学习笔记 | 远望世界&#39; Blog</title>
+<meta name="keywords" content="MarkDown">
+<meta name="description" content="一、标题 # 一级标题 ## 二级标题 ### 三级标题 #### 四级标题 ##### 五级标题 ###### 六级标题 二级标题 三级标题 四级标题 五级标题 六级标题 二、字体 *斜体文本* _斜体文本_">
+<meta name="author" content="远望世界">
+<link rel="canonical" href="https://blog.qiang.uk/2022/03/01/markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://blog.qiang.uk/icons/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://blog.qiang.uk/icons/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://blog.qiang.uk/icons/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://blog.qiang.uk/icons/fapple-touch-icon.png">
+<link rel="mask-icon" href="https://blog.qiang.uk/icons/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="https://blog.qiang.uk/2022/03/01/markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  
+
+<meta property="og:title" content="MarkDown学习笔记" />
+<meta property="og:description" content="一、标题 # 一级标题 ## 二级标题 ### 三级标题 #### 四级标题 ##### 五级标题 ###### 六级标题 二级标题 三级标题 四级标题 五级标题 六级标题 二、字体 *斜体文本* _斜体文本_" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.qiang.uk/2022/03/01/markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" />
+<meta property="og:image" content="https://blog.qiang.uk/icons/avatar.png" />
+<meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-03-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-03-01T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://blog.qiang.uk/icons/avatar.png" />
+<meta name="twitter:title" content="MarkDown学习笔记"/>
+<meta name="twitter:description" content="一、标题 # 一级标题 ## 二级标题 ### 三级标题 #### 四级标题 ##### 五级标题 ###### 六级标题 二级标题 三级标题 四级标题 五级标题 六级标题 二、字体 *斜体文本* _斜体文本_"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
     {
-        "@context": "http://schema.org",
-        "@type": "BlogPosting",
-        "headline": "MarkDown学习笔记",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https:\/\/blog.qiang.uk\/2022\/03\/01\/markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0\/"
-        },"genre": "posts","keywords": "MarkDown","wordcount":  1225 ,
-        "url": "https:\/\/blog.qiang.uk\/2022\/03\/01\/markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0\/","datePublished": "2022-03-01T00:00:00+00:00","dateModified": "2022-03-01T00:00:00+00:00","publisher": {
-            "@type": "Organization",
-            "name": ""},"author": {
-                "@type": "Person",
-                "name": "远望世界"
-            },"description": ""
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://blog.qiang.uk/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "MarkDown学习笔记",
+      "item": "https://blog.qiang.uk/2022/03/01/markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"
     }
-    </script></head>
-    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "MarkDown学习笔记",
+  "name": "MarkDown学习笔记",
+  "description": "一、标题 # 一级标题 ## 二级标题 ### 三级标题 #### 四级标题 ##### 五级标题 ###### 六级标题 二级标题 三级标题 四级标题 五级标题 六级标题 二、字体 *斜体文本* _斜体文本_",
+  "keywords": [
+    "MarkDown"
+  ],
+  "articleBody": "一、标题 # 一级标题 ## 二级标题 ### 三级标题 #### 四级标题 ##### 五级标题 ###### 六级标题 二级标题 三级标题 四级标题 五级标题 六级标题 二、字体 *斜体文本* _斜体文本_ **粗体文本** __粗体文本__ ***粗斜体文本*** ___粗斜体文本___ 斜体文本\n斜体文本\n粗体文本\n粗体文本\n粗斜体文本\n粗斜体文本\n三、分割线 *** * * * ***** - - - ---------- 四、删除线 ~~BAIDU.COM~~ BAIDU.COM\n五、脚注 创建脚注格式类似这样 [^RUNOOB]。 [^RUNOOB]: 菜鸟教程 -- 学的不仅是技术，更是梦想！！！ 创建脚注格式类似这样 1。\n六、列表 1.无序列表 * 第一项 * 第二项 + 第一项 + 第二项 - 第一项 - 第二项 第一项 第二项 第一项 第二项 第一项 第二项 2.有序列表 1. 第一项 2. 第二项 第一项 第二项 3.列表嵌套 1. 第一项： - 第一项嵌套的第一个元素 - 第一项嵌套的第二个元素 2. 第二项： - 第二项嵌套的第一个元素 - 第二项嵌套的第二个元素 第一项： 第一项嵌套的第一个元素 第一项嵌套的第二个元素 第二项： 第二项嵌套的第一个元素 第二项嵌套的第二个元素 七、区块 \u003e 最外层 \u003e \u003e 第一层嵌套 \u003e \u003e \u003e 第二层嵌套 最外层\n第一层嵌套\n第二层嵌套\n1.区块中使用列表 \u003e 区块中使用列表 \u003e 1. 第一项 \u003e 2. 第二项 \u003e + 第一项 \u003e + 第二项 \u003e + 第三项 区块中使用列表\n第一项 第二项 第一项 第二项 2.列表中使用区块 * 第一项 \u003e 菜鸟教程 \u003e 学的不仅是技术更是梦想 * 第二项 第一项\n菜鸟教程 学的不仅是技术更是梦想\n第二项\n八、代码块 `printf()` 函数 printf() 函数\n```javascript $(document).ready(function () { alert('RUNOOB'); }); ``` $(document).ready(function () { alert('RUNOOB'); }); 九、链接 这是一个链接 [菜鸟教程](https://www.runoob.com) 这是一个链接 菜鸟教程\n1.高级链接 这个链接用 1 作为网址变量 [Google][1] 这个链接用 runoob 作为网址变量 [Runoob][runoob] [1]: http://www.google.com/ [runoob]: http://www.runoob.com/ 这个链接用 1 作为网址变量 Google\n这个链接用 runoob 作为网址变量 Runoob\n十、图片 ![alt 属性文本](图片地址) ![alt 属性文本](图片地址 \"可选标题\") ![RUNOOB 图标](http://static.runoob.com/images/runoob-logo.png) ![RUNOOB 图标](http://static.runoob.com/images/runoob-logo.png \"RUNOOB\") 这个链接用 1 作为网址变量 [RUNOOB][1]. 然后在文档的结尾为变量赋值（网址） [1]: http://static.runoob.com/images/runoob-logo.png 这个链接用 1 作为网址变量 RUNOOB. 然后在文档的结尾为变量赋值（网址）\n十一、表格 | 表头 | 表头 | | ---- | ---- | | 单元格 | 单元格 | | 单元格 | 单元格 | 表头 表头 单元格 单元格 单元格 单元格 | 左对齐 | 右对齐 | 居中对齐 | | :-----| ----: | :----: | | 单元格 | 单元格 | 单元格 | | 单元格 | 单元格 | 单元格 | 左对齐列 右对齐列 居中对齐 单元格 单元格 单元格 单元格 单元格 单元格 十二、高级技巧 1.支持的 HTML 元素 使用 Ctrl+Alt+Del 重启电脑 使用 Ctrl+Alt+Del 重启电脑\n2.转义 **文本加粗** \\*\\*正常显示星号\\*\\* 文本加粗\n**正常显示星号**\n菜鸟教程 – 学的不仅是技术，更是梦想！！！ ↩︎\n",
+  "wordCount" : "1138",
+  "inLanguage": "zh",
+  "image": "https://blog.qiang.uk/icons/avatar.png","datePublished": "2022-03-01T00:00:00Z",
+  "dateModified": "2022-03-01T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "远望世界"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://blog.qiang.uk/2022/03/01/markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "远望世界' Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://blog.qiang.uk/icons/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
 
-        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
-    <div class="header-wrapper">
-        <div class="header-title">
-            <a href="/" title="远望世界&#39; Blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>远望世界&#39; Blog</a>
-        </div>
-        <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/"> 主页 </a><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://memo.qiang.uk/" rel="noopener noreffer" target="_blank"> 📝随记 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
-                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
-                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
-                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-desktop">
-                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
-                        </span>
-                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
-                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-                </a></div>
-        </div>
-    </div>
-</header><header class="mobile" id="header-mobile">
-    <div class="header-container">
-        <div class="header-wrapper">
-            <div class="header-title">
-                <a href="/" title="远望世界&#39; Blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>远望世界&#39; Blog</a>
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://blog.qiang.uk/" accesskey="h" title="远望世界&#39; Blog (Alt + H)">远望世界&#39; Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
-            <div class="menu-toggle" id="menu-toggle-mobile">
-                <span></span><span></span><span></span>
-            </div>
         </div>
-        <div class="menu" id="menu-mobile"><div class="search-wrapper">
-                    <div class="search mobile" id="search-mobile">
-                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
-                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
-                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-mobile">
-                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
-                        </span>
-                    </div>
-                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
-                        取消
-                    </a>
-                </div><a class="menu-item" href="/" title="">主页</a><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://memo.qiang.uk/" title="" rel="noopener noreffer" target="_blank">📝随记</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
-                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-            </a></div>
-    </div>
-</header><div class="search-dropdown desktop">
-        <div id="search-dropdown-desktop"></div>
-    </div>
-    <div class="search-dropdown mobile">
-        <div id="search-dropdown-mobile"></div>
-    </div><main class="main">
-                <div class="container"><div class="toc" id="toc-auto">
-            <h2 class="toc-title">目录</h2>
-            <div class="toc-content always-active" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">MarkDown学习笔记</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="https://github.com/yuanwangshijie" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>远望世界</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E6%95%99%E7%A8%8B/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>教程</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-03-01">2022-03-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 1225 字&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 3 分钟&nbsp;</div>
-        </div><div class="details toc" id="toc-static"  data-kept="">
-                <div class="details-summary toc-title">
-                    <span>目录</span>
-                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
-                </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
-  <ul>
-    <li><a href="#一标题">一、标题</a></li>
-    <li><a href="#二级标题">二级标题</a>
-      <ul>
-        <li><a href="#三级标题">三级标题</a>
-          <ul>
-            <li><a href="#四级标题">四级标题</a>
-              <ul>
-                <li><a href="#五级标题">五级标题</a>
-                  <ul>
-                    <li><a href="#六级标题">六级标题</a></li>
-                  </ul>
-                </li>
-              </ul>
+        <ul id="menu">
+            <li>
+                <a href="https://blog.qiang.uk/posts" title="主页">
+                    <span>主页</span>
+                </a>
             </li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li><a href="#二字体">二、字体</a></li>
-    <li><a href="#三分割线">三、分割线</a></li>
-    <li><a href="#四删除线">四、删除线</a></li>
-    <li><a href="#五脚注">五、脚注</a></li>
-    <li><a href="#六列表">六、列表</a>
-      <ul>
-        <li><a href="#1无序列表">1.无序列表</a></li>
-        <li><a href="#2有序列表">2.有序列表</a></li>
-        <li><a href="#3列表嵌套">3.列表嵌套</a></li>
-      </ul>
-    </li>
-    <li><a href="#七区块">七、区块</a>
-      <ul>
-        <li><a href="#1区块中使用列表">1.区块中使用列表</a></li>
-        <li><a href="#2列表中使用区块">2.列表中使用区块</a></li>
-      </ul>
-    </li>
-    <li><a href="#八代码块">八、代码块</a></li>
-    <li><a href="#九链接">九、链接</a>
-      <ul>
-        <li><a href="#1高级链接">1.高级链接</a></li>
-      </ul>
-    </li>
-    <li><a href="#十图片">十、图片</a></li>
-    <li><a href="#十一表格">十一、表格</a></li>
-    <li><a href="#十二高级技巧">十二、高级技巧</a>
-      <ul>
-        <li><a href="#1支持的-html-元素">1.支持的 HTML 元素</a></li>
-        <li><a href="#2转义">2.转义</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav></div>
-            </div><div class="content" id="content"><h2 id="一标题">一、标题</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># 一级标题
-</span></span><span class="line"><span class="cl">## 二级标题
-</span></span><span class="line"><span class="cl">### 三级标题
-</span></span><span class="line"><span class="cl">#### 四级标题
-</span></span><span class="line"><span class="cl">##### 五级标题
-</span></span><span class="line"><span class="cl">###### 六级标题
-</span></span></code></pre></td></tr></table>
+            <li>
+                <a href="https://blog.qiang.uk/search" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.qiang.uk/categories" title="分类">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.qiang.uk/tags" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.qiang.uk/archives" title="归档">
+                    <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://memo.qiang.uk/" title="随记">
+                    <span>随记</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://blog.qiang.uk/">主页</a>&nbsp;»&nbsp;<a href="https://blog.qiang.uk/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      MarkDown学习笔记
+    </h1>
+    <div class="post-meta"><span title='2022-03-01 00:00:00 +0000 UTC'>三月 1, 2022</span>&nbsp;·&nbsp;3 分钟&nbsp;·&nbsp;远望世界&nbsp;|&nbsp;<a href="https://github.com/yuanwangshijie/hugo-blog/tree/main/content/posts/2022/MarkDown%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0.md" rel="noopener noreferrer" target="_blank">编辑此页</a>
+
 </div>
-</div><blockquote>
-<h2 id="二级标题">二级标题</h2>
-<h3 id="三级标题">三级标题</h3>
-<h4 id="四级标题">四级标题</h4>
-<h5 id="五级标题">五级标题</h5>
-<h6 id="六级标题">六级标题</h6>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目录</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e4%b8%80%e6%a0%87%e9%a2%98" aria-label="一、标题">一、标题</a></li>
+                <li>
+                    <a href="#%e4%ba%8c%e7%ba%a7%e6%a0%87%e9%a2%98" aria-label="二级标题">二级标题</a><ul>
+                        
+                <li>
+                    <a href="#%e4%b8%89%e7%ba%a7%e6%a0%87%e9%a2%98" aria-label="三级标题">三级标题</a><ul>
+                        
+                <li>
+                    <a href="#%e5%9b%9b%e7%ba%a7%e6%a0%87%e9%a2%98" aria-label="四级标题">四级标题</a><ul>
+                        
+                <li>
+                    <a href="#%e4%ba%94%e7%ba%a7%e6%a0%87%e9%a2%98" aria-label="五级标题">五级标题</a><ul>
+                        
+                <li>
+                    <a href="#%e5%85%ad%e7%ba%a7%e6%a0%87%e9%a2%98" aria-label="六级标题">六级标题</a></li></ul>
+                </li></ul>
+                </li></ul>
+                </li></ul>
+                </li>
+                <li>
+                    <a href="#%e4%ba%8c%e5%ad%97%e4%bd%93" aria-label="二、字体">二、字体</a></li>
+                <li>
+                    <a href="#%e4%b8%89%e5%88%86%e5%89%b2%e7%ba%bf" aria-label="三、分割线">三、分割线</a></li>
+                <li>
+                    <a href="#%e5%9b%9b%e5%88%a0%e9%99%a4%e7%ba%bf" aria-label="四、删除线">四、删除线</a></li>
+                <li>
+                    <a href="#%e4%ba%94%e8%84%9a%e6%b3%a8" aria-label="五、脚注">五、脚注</a></li>
+                <li>
+                    <a href="#%e5%85%ad%e5%88%97%e8%a1%a8" aria-label="六、列表">六、列表</a><ul>
+                        
+                <li>
+                    <a href="#1%e6%97%a0%e5%ba%8f%e5%88%97%e8%a1%a8" aria-label="1.无序列表">1.无序列表</a></li>
+                <li>
+                    <a href="#2%e6%9c%89%e5%ba%8f%e5%88%97%e8%a1%a8" aria-label="2.有序列表">2.有序列表</a></li>
+                <li>
+                    <a href="#3%e5%88%97%e8%a1%a8%e5%b5%8c%e5%a5%97" aria-label="3.列表嵌套">3.列表嵌套</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e4%b8%83%e5%8c%ba%e5%9d%97" aria-label="七、区块">七、区块</a><ul>
+                        
+                <li>
+                    <a href="#1%e5%8c%ba%e5%9d%97%e4%b8%ad%e4%bd%bf%e7%94%a8%e5%88%97%e8%a1%a8" aria-label="1.区块中使用列表">1.区块中使用列表</a></li>
+                <li>
+                    <a href="#2%e5%88%97%e8%a1%a8%e4%b8%ad%e4%bd%bf%e7%94%a8%e5%8c%ba%e5%9d%97" aria-label="2.列表中使用区块">2.列表中使用区块</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e5%85%ab%e4%bb%a3%e7%a0%81%e5%9d%97" aria-label="八、代码块">八、代码块</a></li>
+                <li>
+                    <a href="#%e4%b9%9d%e9%93%be%e6%8e%a5" aria-label="九、链接">九、链接</a><ul>
+                        
+                <li>
+                    <a href="#1%e9%ab%98%e7%ba%a7%e9%93%be%e6%8e%a5" aria-label="1.高级链接">1.高级链接</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e5%8d%81%e5%9b%be%e7%89%87" aria-label="十、图片">十、图片</a></li>
+                <li>
+                    <a href="#%e5%8d%81%e4%b8%80%e8%a1%a8%e6%a0%bc" aria-label="十一、表格">十一、表格</a></li>
+                <li>
+                    <a href="#%e5%8d%81%e4%ba%8c%e9%ab%98%e7%ba%a7%e6%8a%80%e5%b7%a7" aria-label="十二、高级技巧">十二、高级技巧</a><ul>
+                        
+                <li>
+                    <a href="#1%e6%94%af%e6%8c%81%e7%9a%84-html-%e5%85%83%e7%b4%a0" aria-label="1.支持的 HTML 元素">1.支持的 HTML 元素</a></li>
+                <li>
+                    <a href="#2%e8%bd%ac%e4%b9%89" aria-label="2.转义">2.转义</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h2 id="一标题">一、标题<a hidden class="anchor" aria-hidden="true" href="#一标题">#</a></h2>
+<pre tabindex="0"><code># 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题
+</code></pre><blockquote>
+<h2 id="二级标题">二级标题<a hidden class="anchor" aria-hidden="true" href="#二级标题">#</a></h2>
+<h3 id="三级标题">三级标题<a hidden class="anchor" aria-hidden="true" href="#三级标题">#</a></h3>
+<h4 id="四级标题">四级标题<a hidden class="anchor" aria-hidden="true" href="#四级标题">#</a></h4>
+<h5 id="五级标题">五级标题<a hidden class="anchor" aria-hidden="true" href="#五级标题">#</a></h5>
+<h6 id="六级标题">六级标题<a hidden class="anchor" aria-hidden="true" href="#六级标题">#</a></h6>
 </blockquote>
-<h2 id="二字体">二、字体</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">*斜体文本*
-</span></span><span class="line"><span class="cl">_斜体文本_
-</span></span><span class="line"><span class="cl">**粗体文本**
-</span></span><span class="line"><span class="cl">__粗体文本__
-</span></span><span class="line"><span class="cl">***粗斜体文本***
-</span></span><span class="line"><span class="cl">___粗斜体文本___
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p><em>斜体文本</em></p>
+<h2 id="二字体">二、字体<a hidden class="anchor" aria-hidden="true" href="#二字体">#</a></h2>
+<pre tabindex="0"><code>*斜体文本*
+_斜体文本_
+**粗体文本**
+__粗体文本__
+***粗斜体文本***
+___粗斜体文本___
+</code></pre><p><em>斜体文本</em></p>
 <p><em>斜体文本</em></p>
 <p><strong>粗体文本</strong></p>
 <p><strong>粗体文本</strong></p>
 <p><em><strong>粗斜体文本</strong></em></p>
 <p><em><strong>粗斜体文本</strong></em></p>
-<h2 id="三分割线">三、分割线</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">***
-</span></span><span class="line"><span class="cl">* * *
-</span></span><span class="line"><span class="cl">*****
-</span></span><span class="line"><span class="cl">- - -
-</span></span><span class="line"><span class="cl">----------
-</span></span></code></pre></td></tr></table>
-</div>
-</div><hr>
+<h2 id="三分割线">三、分割线<a hidden class="anchor" aria-hidden="true" href="#三分割线">#</a></h2>
+<pre tabindex="0"><code>***
+* * *
+*****
+- - -
+----------
+</code></pre><hr>
 <hr>
 <hr>
 <hr>
 <hr>
-<h2 id="四删除线">四、删除线</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">~~BAIDU.COM~~
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p><del>BAIDU.COM</del></p>
-<h2 id="五脚注">五、脚注</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">创建脚注格式类似这样 [^RUNOOB]。
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">[^RUNOOB]: 菜鸟教程 -- 学的不仅是技术，更是梦想！！！
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>创建脚注格式类似这样 <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>。</p>
-<h2 id="六列表">六、列表</h2>
-<h3 id="1无序列表">1.无序列表</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">* 第一项
-</span></span><span class="line"><span class="cl">* 第二项
-</span></span><span class="line"><span class="cl">+ 第一项
-</span></span><span class="line"><span class="cl">+ 第二项
-</span></span><span class="line"><span class="cl">- 第一项
-</span></span><span class="line"><span class="cl">- 第二项
-</span></span></code></pre></td></tr></table>
-</div>
-</div><ul>
+<h2 id="四删除线">四、删除线<a hidden class="anchor" aria-hidden="true" href="#四删除线">#</a></h2>
+<pre tabindex="0"><code>~~BAIDU.COM~~
+</code></pre><p><del>BAIDU.COM</del></p>
+<h2 id="五脚注">五、脚注<a hidden class="anchor" aria-hidden="true" href="#五脚注">#</a></h2>
+<pre tabindex="0"><code>创建脚注格式类似这样 [^RUNOOB]。
+
+[^RUNOOB]: 菜鸟教程 -- 学的不仅是技术，更是梦想！！！
+</code></pre><p>创建脚注格式类似这样 <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>。</p>
+<h2 id="六列表">六、列表<a hidden class="anchor" aria-hidden="true" href="#六列表">#</a></h2>
+<h3 id="1无序列表">1.无序列表<a hidden class="anchor" aria-hidden="true" href="#1无序列表">#</a></h3>
+<pre tabindex="0"><code>* 第一项
+* 第二项
++ 第一项
++ 第二项
+- 第一项
+- 第二项
+</code></pre><ul>
 <li>第一项</li>
 <li>第二项</li>
 </ul>
@@ -297,41 +364,21 @@
 <li>第一项</li>
 <li>第二项</li>
 </ul>
-<h3 id="2有序列表">2.有序列表</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1. 第一项
-</span></span><span class="line"><span class="cl">2. 第二项
-</span></span></code></pre></td></tr></table>
-</div>
-</div><ol>
+<h3 id="2有序列表">2.有序列表<a hidden class="anchor" aria-hidden="true" href="#2有序列表">#</a></h3>
+<pre tabindex="0"><code>1. 第一项
+2. 第二项
+</code></pre><ol>
 <li>第一项</li>
 <li>第二项</li>
 </ol>
-<h3 id="3列表嵌套">3.列表嵌套</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1. 第一项：
-</span></span><span class="line"><span class="cl">    - 第一项嵌套的第一个元素
-</span></span><span class="line"><span class="cl">    - 第一项嵌套的第二个元素
-</span></span><span class="line"><span class="cl">2. 第二项：
-</span></span><span class="line"><span class="cl">    - 第二项嵌套的第一个元素
-</span></span><span class="line"><span class="cl">    - 第二项嵌套的第二个元素
-</span></span></code></pre></td></tr></table>
-</div>
-</div><ol>
+<h3 id="3列表嵌套">3.列表嵌套<a hidden class="anchor" aria-hidden="true" href="#3列表嵌套">#</a></h3>
+<pre tabindex="0"><code>1. 第一项：
+    - 第一项嵌套的第一个元素
+    - 第一项嵌套的第二个元素
+2. 第二项：
+    - 第二项嵌套的第一个元素
+    - 第二项嵌套的第二个元素
+</code></pre><ol>
 <li>第一项：
 <ul>
 <li>第一项嵌套的第一个元素</li>
@@ -345,20 +392,11 @@
 </ul>
 </li>
 </ol>
-<h2 id="七区块">七、区块</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&gt; 最外层
-</span></span><span class="line"><span class="cl">&gt; &gt; 第一层嵌套
-</span></span><span class="line"><span class="cl">&gt; &gt; &gt; 第二层嵌套
-</span></span></code></pre></td></tr></table>
-</div>
-</div><blockquote>
+<h2 id="七区块">七、区块<a hidden class="anchor" aria-hidden="true" href="#七区块">#</a></h2>
+<pre tabindex="0"><code>&gt; 最外层
+&gt; &gt; 第一层嵌套
+&gt; &gt; &gt; 第二层嵌套
+</code></pre><blockquote>
 <p>最外层</p>
 <blockquote>
 <p>第一层嵌套</p>
@@ -367,26 +405,14 @@
 </blockquote>
 </blockquote>
 </blockquote>
-<h3 id="1区块中使用列表">1.区块中使用列表</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&gt; 区块中使用列表
-</span></span><span class="line"><span class="cl">&gt; 1. 第一项
-</span></span><span class="line"><span class="cl">&gt; 2. 第二项
-</span></span><span class="line"><span class="cl">&gt; + 第一项
-</span></span><span class="line"><span class="cl">&gt; + 第二项
-</span></span><span class="line"><span class="cl">&gt; + 第三项
-</span></span></code></pre></td></tr></table>
-</div>
-</div><blockquote>
+<h3 id="1区块中使用列表">1.区块中使用列表<a hidden class="anchor" aria-hidden="true" href="#1区块中使用列表">#</a></h3>
+<pre tabindex="0"><code>&gt; 区块中使用列表
+&gt; 1. 第一项
+&gt; 2. 第二项
+&gt; + 第一项
+&gt; + 第二项
+&gt; + 第三项
+</code></pre><blockquote>
 <p>区块中使用列表</p>
 <ol>
 <li>第一项</li>
@@ -397,22 +423,12 @@
 <li>第二项</li>
 </ul>
 </blockquote>
-<h3 id="2列表中使用区块">2.列表中使用区块</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">* 第一项
-</span></span><span class="line"><span class="cl">    &gt; 菜鸟教程
-</span></span><span class="line"><span class="cl">    &gt; 学的不仅是技术更是梦想
-</span></span><span class="line"><span class="cl">* 第二项
-</span></span></code></pre></td></tr></table>
-</div>
-</div><ul>
+<h3 id="2列表中使用区块">2.列表中使用区块<a hidden class="anchor" aria-hidden="true" href="#2列表中使用区块">#</a></h3>
+<pre tabindex="0"><code>* 第一项
+    &gt; 菜鸟教程
+    &gt; 学的不仅是技术更是梦想
+* 第二项
+</code></pre><ul>
 <li>
 <p>第一项</p>
 <blockquote>
@@ -424,153 +440,54 @@
 <p>第二项</p>
 </li>
 </ul>
-<h2 id="八代码块">八、代码块</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">`printf()` 函数
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p><code>printf()</code> 函数</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="sb">```javascript
+<h2 id="八代码块">八、代码块<a hidden class="anchor" aria-hidden="true" href="#八代码块">#</a></h2>
+<pre tabindex="0"><code>`printf()` 函数
+</code></pre><p><code>printf()</code> 函数</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="sb">```javascript
 </span></span></span><span class="line"><span class="cl"><span class="sb">$(document).ready(function () {
 </span></span></span><span class="line"><span class="cl"><span class="sb">    alert(&#39;RUNOOB&#39;);
 </span></span></span><span class="line"><span class="cl"><span class="sb">});
 </span></span></span><span class="line"><span class="cl"><span class="sb">```</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;RUNOOB&#39;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">});</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h2 id="九链接">九、链接</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">这是一个链接 [菜鸟教程](https://www.runoob.com)
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>这是一个链接 <a href="https://www.runoob.com" target="_blank" rel="noopener noreffer ">菜鸟教程</a></p>
-<h3 id="1高级链接">1.高级链接</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">这个链接用 1 作为网址变量 [Google][1]
-</span></span><span class="line"><span class="cl">这个链接用 runoob 作为网址变量 [Runoob][runoob]
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">[1]: http://www.google.com/
-</span></span><span class="line"><span class="cl">[runoob]: http://www.runoob.com/
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>这个链接用 1 作为网址变量 <a href="http://www.google.com/" target="_blank" rel="noopener noreffer ">Google</a></p>
-<p>这个链接用 runoob 作为网址变量 <a href="http://www.runoob.com/" target="_blank" rel="noopener noreffer ">Runoob</a></p>
-<h2 id="十图片">十、图片</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">![alt 属性文本](图片地址)
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">![alt 属性文本](图片地址 &#34;可选标题&#34;)
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">![RUNOOB 图标](http://static.runoob.com/images/runoob-logo.png)
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">![RUNOOB 图标](http://static.runoob.com/images/runoob-logo.png &#34;RUNOOB&#34;)
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="http://static.runoob.com/images/runoob-logo.png"
-        data-srcset="http://static.runoob.com/images/runoob-logo.png, http://static.runoob.com/images/runoob-logo.png 1.5x, http://static.runoob.com/images/runoob-logo.png 2x"
-        data-sizes="auto"
-        alt="http://static.runoob.com/images/runoob-logo.png"
-        title="RUNOOB 图标" /></p>
-<p><figure><a class="lightgallery" href="http://static.runoob.com/images/runoob-logo.png" title="RUNOOB 图标" data-thumbnail="http://static.runoob.com/images/runoob-logo.png" data-sub-html="<h2>RUNOOB</h2><p>RUNOOB 图标</p>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="http://static.runoob.com/images/runoob-logo.png"
-            data-srcset="http://static.runoob.com/images/runoob-logo.png, http://static.runoob.com/images/runoob-logo.png 1.5x, http://static.runoob.com/images/runoob-logo.png 2x"
-            data-sizes="auto"
-            alt="http://static.runoob.com/images/runoob-logo.png" />
-    </a><figcaption class="image-caption">RUNOOB</figcaption>
-    </figure></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">这个链接用 1 作为网址变量 [RUNOOB][1].
-</span></span><span class="line"><span class="cl">然后在文档的结尾为变量赋值（网址）
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">[1]: http://static.runoob.com/images/runoob-logo.png
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>这个链接用 1 作为网址变量 <a href="http://www.google.com/" target="_blank" rel="noopener noreffer ">RUNOOB</a>.
+</span></span></code></pre></div><h2 id="九链接">九、链接<a hidden class="anchor" aria-hidden="true" href="#九链接">#</a></h2>
+<pre tabindex="0"><code>这是一个链接 [菜鸟教程](https://www.runoob.com)
+</code></pre><p>这是一个链接 <a href="https://www.runoob.com">菜鸟教程</a></p>
+<h3 id="1高级链接">1.高级链接<a hidden class="anchor" aria-hidden="true" href="#1高级链接">#</a></h3>
+<pre tabindex="0"><code>这个链接用 1 作为网址变量 [Google][1]
+这个链接用 runoob 作为网址变量 [Runoob][runoob]
+
+[1]: http://www.google.com/
+[runoob]: http://www.runoob.com/
+</code></pre><p>这个链接用 1 作为网址变量 <a href="http://www.google.com/">Google</a></p>
+<p>这个链接用 runoob 作为网址变量 <a href="http://www.runoob.com/">Runoob</a></p>
+<h2 id="十图片">十、图片<a hidden class="anchor" aria-hidden="true" href="#十图片">#</a></h2>
+<pre tabindex="0"><code>![alt 属性文本](图片地址)
+
+![alt 属性文本](图片地址 &#34;可选标题&#34;)
+
+![RUNOOB 图标](http://static.runoob.com/images/runoob-logo.png)
+
+![RUNOOB 图标](http://static.runoob.com/images/runoob-logo.png &#34;RUNOOB&#34;)
+</code></pre><p><img loading="lazy" src="http://static.runoob.com/images/runoob-logo.png" alt="RUNOOB 图标"  />
+</p>
+<p><img loading="lazy" src="http://static.runoob.com/images/runoob-logo.png" alt="RUNOOB 图标"  title="RUNOOB"  />
+</p>
+<pre tabindex="0"><code>这个链接用 1 作为网址变量 [RUNOOB][1].
+然后在文档的结尾为变量赋值（网址）
+
+[1]: http://static.runoob.com/images/runoob-logo.png
+</code></pre><p>这个链接用 1 作为网址变量 <a href="http://www.google.com/">RUNOOB</a>.
 然后在文档的结尾为变量赋值（网址）</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;img src=&#34;http://static.runoob.com/images/runoob-logo.png&#34; width=&#34;50%&#34;&gt;
-</span></span></code></pre></td></tr></table>
-</div>
-</div><img src="http://static.runoob.com/images/runoob-logo.png" width="50%">
-<h2 id="十一表格">十一、表格</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">|  表头   |  表头  |
-</span></span><span class="line"><span class="cl">|  ----  | ----  |
-</span></span><span class="line"><span class="cl">| 单元格  | 单元格 |
-</span></span><span class="line"><span class="cl">| 单元格  | 单元格 |
-</span></span></code></pre></td></tr></table>
-</div>
-</div><table>
+<pre tabindex="0"><code>&lt;img src=&#34;http://static.runoob.com/images/runoob-logo.png&#34; width=&#34;50%&#34;&gt;
+</code></pre><img src="http://static.runoob.com/images/runoob-logo.png" width="50%">
+<h2 id="十一表格">十一、表格<a hidden class="anchor" aria-hidden="true" href="#十一表格">#</a></h2>
+<pre tabindex="0"><code>|  表头   |  表头  |
+|  ----  | ----  |
+| 单元格  | 单元格 |
+| 单元格  | 单元格 |
+</code></pre><table>
 <thead>
 <tr>
 <th>表头</th>
@@ -588,21 +505,11 @@
 </tr>
 </tbody>
 </table>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">| 左对齐 | 右对齐 | 居中对齐 |
-</span></span><span class="line"><span class="cl">| :-----| ----: | :----: |
-</span></span><span class="line"><span class="cl">| 单元格 | 单元格 | 单元格 |
-</span></span><span class="line"><span class="cl">| 单元格 | 单元格 | 单元格 |
-</span></span></code></pre></td></tr></table>
-</div>
-</div><table>
+<pre tabindex="0"><code>| 左对齐 | 右对齐 | 居中对齐 |
+| :-----| ----: | :----: |
+| 单元格 | 单元格 | 单元格 |
+| 单元格 | 单元格 | 单元格 |
+</code></pre><table>
 <thead>
 <tr>
 <th style="text-align:left">左对齐列</th>
@@ -623,29 +530,14 @@
 </tr>
 </tbody>
 </table>
-<h2 id="十二高级技巧">十二、高级技巧</h2>
-<h3 id="1支持的-html-元素">1.支持的 HTML 元素</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">使用 &lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;Alt&lt;/kbd&gt;+&lt;kbd&gt;Del&lt;/kbd&gt; 重启电脑
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑</p>
-<h3 id="2转义">2.转义</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">**文本加粗** 
-</span></span><span class="line"><span class="cl">\*\*正常显示星号\*\*
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p><strong>文本加粗</strong></p>
+<h2 id="十二高级技巧">十二、高级技巧<a hidden class="anchor" aria-hidden="true" href="#十二高级技巧">#</a></h2>
+<h3 id="1支持的-html-元素">1.支持的 HTML 元素<a hidden class="anchor" aria-hidden="true" href="#1支持的-html-元素">#</a></h3>
+<pre tabindex="0"><code>使用 &lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;Alt&lt;/kbd&gt;+&lt;kbd&gt;Del&lt;/kbd&gt; 重启电脑
+</code></pre><p>使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑</p>
+<h3 id="2转义">2.转义<a hidden class="anchor" aria-hidden="true" href="#2转义">#</a></h3>
+<pre tabindex="0"><code>**文本加粗** 
+\*\*正常显示星号\*\*
+</code></pre><p><strong>文本加粗</strong></p>
 <p>**正常显示星号**</p>
 <div class="footnotes" role="doc-endnotes">
 <hr>
@@ -655,43 +547,210 @@
 </li>
 </ol>
 </div>
-</div><div class="post-footer" id="post-footer">
-    <div class="post-info">
-        <div class="post-info-line">
-            <div class="post-info-mod">
-                <span>更新于 2022-03-01</span>
-            </div></div>
-        <div class="post-info-line">
-            <div class="post-info-md"><span>
-                            <a class="link-to-markdown" href="/2022/03/01/markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.md" target="_blank">阅读原始文档</a>
-                        </span></div>
-            <div class="post-info-share">
-                <span></span>
-            </div>
-        </div>
-    </div>
 
-    <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/markdown/">MarkDown</a></section>
-        <section>
-            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
-        </section>
-    </div>
 
-    <div class="post-nav">
-            <a href="/2022/05/01/docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/" class="next" rel="next" title="Docker常用命令整理">Docker常用命令整理<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
-</div>
-</article></div>
-            </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.129.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
-                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/yuanwangshijie" target="_blank">远望世界</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
-        </div>
-    </footer></div>
+  </div>
 
-        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
-                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
-            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
-                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
-            </a>
-        </div><link rel="stylesheet" href="/lib/lightgallery/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.stemmer.support.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.zh.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/twemoji/twemoji.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/mhchem.min.js"></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","lunrLanguageCode":"zh","lunrSegmentitURL":"/lib/lunr/lunr.segmentit.js","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"lunr"},"twemoji":true};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://blog.qiang.uk/tags/markdown/">MarkDown</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://blog.qiang.uk/2022/05/01/docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/">
+    <span class="title">« 上一页</span>
+    <br>
+    <span>Docker常用命令整理</span>
+  </a>
+</nav>
+
+
+<ul class="share-buttons">
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share MarkDown学习笔记 on x"
+            href="https://x.com/intent/tweet/?text=MarkDown%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0&amp;url=https%3a%2f%2fblog.qiang.uk%2f2022%2f03%2f01%2fmarkdown%25E5%25AD%25A6%25E4%25B9%25A0%25E7%25AC%2594%25E8%25AE%25B0%2f&amp;hashtags=MarkDown">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share MarkDown学习笔记 on linkedin"
+            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fblog.qiang.uk%2f2022%2f03%2f01%2fmarkdown%25E5%25AD%25A6%25E4%25B9%25A0%25E7%25AC%2594%25E8%25AE%25B0%2f&amp;title=MarkDown%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0&amp;summary=MarkDown%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0&amp;source=https%3a%2f%2fblog.qiang.uk%2f2022%2f03%2f01%2fmarkdown%25E5%25AD%25A6%25E4%25B9%25A0%25E7%25AC%2594%25E8%25AE%25B0%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share MarkDown学习笔记 on reddit"
+            href="https://reddit.com/submit?url=https%3a%2f%2fblog.qiang.uk%2f2022%2f03%2f01%2fmarkdown%25E5%25AD%25A6%25E4%25B9%25A0%25E7%25AC%2594%25E8%25AE%25B0%2f&title=MarkDown%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share MarkDown学习笔记 on facebook"
+            href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fblog.qiang.uk%2f2022%2f03%2f01%2fmarkdown%25E5%25AD%25A6%25E4%25B9%25A0%25E7%25AC%2594%25E8%25AE%25B0%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share MarkDown学习笔记 on whatsapp"
+            href="https://api.whatsapp.com/send?text=MarkDown%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0%20-%20https%3a%2f%2fblog.qiang.uk%2f2022%2f03%2f01%2fmarkdown%25E5%25AD%25A6%25E4%25B9%25A0%25E7%25AC%2594%25E8%25AE%25B0%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share MarkDown学习笔记 on telegram"
+            href="https://telegram.me/share/url?text=MarkDown%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0&amp;url=https%3a%2f%2fblog.qiang.uk%2f2022%2f03%2f01%2fmarkdown%25E5%25AD%25A6%25E4%25B9%25A0%25E7%25AC%2594%25E8%25AE%25B0%2f">
+            <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share MarkDown学习笔记 on ycombinator"
+            href="https://news.ycombinator.com/submitlink?t=MarkDown%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0&u=https%3a%2f%2fblog.qiang.uk%2f2022%2f03%2f01%2fmarkdown%25E5%25AD%25A6%25E4%25B9%25A0%25E7%25AC%2594%25E8%25AE%25B0%2f">
+            <svg version="1.1" xml:space="preserve" width="30px" height="30px" viewBox="0 0 512 512" fill="currentColor"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+                <path
+                    d="M449.446 0C483.971 0 512 28.03 512 62.554L512 449.446C512 483.97 483.97 512 449.446 512L62.554 512C28.03 512 0 483.97 0 449.446L0 62.554C0 28.03 28.029 0 62.554 0L449.446 0ZM183.8767 87.9921H121.8427L230.6673 292.4508V424.0079H281.3328V292.4508L390.1575 87.9921H328.1233L256 238.2489z" />
+            </svg>
+        </a>
+    </li>
+</ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>© <a href="https://blog.qiang.uk/">远望世界</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '复制';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已复制！';
+            setTimeout(() => {
+                copybutton.innerHTML = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
 </html>

@@ -1,16 +1,25 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Nginx - 标签 - 远望世界&#39; Blog</title>
-        <link>https://blog.qiang.uk/tags/nginx/</link>
-        <description>Nginx - 标签 - 远望世界&#39; Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>yuanwangshijie@gmail.com (远望世界)</managingEditor>
-            <webMaster>yuanwangshijie@gmail.com (远望世界)</webMaster><lastBuildDate>Fri, 01 Jul 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://blog.qiang.uk/tags/nginx/" rel="self" type="application/rss+xml" /><item>
-    <title>Nginx详细教程</title>
-    <link>https://blog.qiang.uk/2022/07/01/nginx%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/</link>
-    <pubDate>Fri, 01 Jul 2022 00:00:00 &#43;0000</pubDate>
-    <author>远望世界</author>
-    <guid>https://blog.qiang.uk/2022/07/01/nginx%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/</guid>
-    <description><![CDATA[一、Nginx介绍 1.1 引言 为什么要学习Nginx 问题1：客户端到底要将请求发送给哪台服务器 问题2：如果所有客户端的请求都发送给了服务器 问题3：]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Nginx on 远望世界&#39; Blog</title>
+    <link>https://blog.qiang.uk/tags/nginx/</link>
+    <description>Recent content in Nginx on 远望世界&#39; Blog</description>
+    <image>
+      <title>远望世界&#39; Blog</title>
+      <url>https://blog.qiang.uk/icons/avatar.png</url>
+      <link>https://blog.qiang.uk/icons/avatar.png</link>
+    </image>
+    <generator>Hugo -- 0.129.0</generator>
+    <language>zh</language>
+    <copyright>远望世界</copyright>
+    <lastBuildDate>Fri, 01 Jul 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.qiang.uk/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nginx详细教程</title>
+      <link>https://blog.qiang.uk/2022/07/01/nginx%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://blog.qiang.uk/2022/07/01/nginx%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/</guid>
+      <description>一、Nginx介绍 1.1 引言 为什么要学习Nginx 问题1：客户端到底要将请求发送给哪台服务器 问题2：如果所有客户端的请求都发送给了服务器 问题3：</description>
+    </item>
+  </channel>
 </rss>

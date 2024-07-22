@@ -1,24 +1,32 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>工具 - 分类 - 远望世界&#39; Blog</title>
-        <link>https://blog.qiang.uk/categories/%E5%B7%A5%E5%85%B7/</link>
-        <description>工具 - 分类 - 远望世界&#39; Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>yuanwangshijie@gmail.com (远望世界)</managingEditor>
-            <webMaster>yuanwangshijie@gmail.com (远望世界)</webMaster><lastBuildDate>Wed, 01 Feb 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://blog.qiang.uk/categories/%E5%B7%A5%E5%85%B7/" rel="self" type="application/rss+xml" /><item>
-    <title>好用的Docker应用汇总</title>
-    <link>https://blog.qiang.uk/2023/02/01/%E5%A5%BD%E7%94%A8%E7%9A%84docker%E5%BA%94%E7%94%A8%E6%B1%87%E6%80%BB/</link>
-    <pubDate>Wed, 01 Feb 2023 00:00:00 &#43;0000</pubDate>
-    <author>远望世界</author>
-    <guid>https://blog.qiang.uk/2023/02/01/%E5%A5%BD%E7%94%A8%E7%9A%84docker%E5%BA%94%E7%94%A8%E6%B1%87%E6%80%BB/</guid>
-    <description><![CDATA[本文收集一些比较有趣的Docker应用，镜像版本更新可能会导致脚本或配置失效，如果无法使用请发邮件给我。 一、安装环境 系统 Ubuntu 已开启 BBR加速 B]]></description>
-</item>
-<item>
-    <title>随机图片api</title>
-    <link>https://blog.qiang.uk/2022/12/26/%E9%9A%8F%E6%9C%BA%E5%9B%BE%E7%89%87api/</link>
-    <pubDate>Mon, 26 Dec 2022 00:00:00 &#43;0000</pubDate>
-    <author>远望世界</author>
-    <guid>https://blog.qiang.uk/2022/12/26/%E9%9A%8F%E6%9C%BA%E5%9B%BE%E7%89%87api/</guid>
-    <description><![CDATA[一、api整合 樱道 网站：https://img.r10086.com/ 调用地址： 二次元动漫(1-18)：https://api.r10086]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>工具 on 远望世界&#39; Blog</title>
+    <link>https://blog.qiang.uk/categories/%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 工具 on 远望世界&#39; Blog</description>
+    <image>
+      <title>远望世界&#39; Blog</title>
+      <url>https://blog.qiang.uk/icons/avatar.png</url>
+      <link>https://blog.qiang.uk/icons/avatar.png</link>
+    </image>
+    <generator>Hugo -- 0.129.0</generator>
+    <language>zh</language>
+    <copyright>远望世界</copyright>
+    <lastBuildDate>Wed, 01 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.qiang.uk/categories/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>好用的Docker应用汇总</title>
+      <link>https://blog.qiang.uk/2023/02/01/%E5%A5%BD%E7%94%A8%E7%9A%84docker%E5%BA%94%E7%94%A8%E6%B1%87%E6%80%BB/</link>
+      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://blog.qiang.uk/2023/02/01/%E5%A5%BD%E7%94%A8%E7%9A%84docker%E5%BA%94%E7%94%A8%E6%B1%87%E6%80%BB/</guid>
+      <description>本文收集一些比较有趣的Docker应用，镜像版本更新可能会导致脚本或配置失效，如果无法使用请发邮件给我。 一、安装环境 系统 Ubuntu 已开启 BBR加速 B</description>
+    </item>
+    <item>
+      <title>随机图片api</title>
+      <link>https://blog.qiang.uk/2022/12/26/%E9%9A%8F%E6%9C%BA%E5%9B%BE%E7%89%87api/</link>
+      <pubDate>Mon, 26 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://blog.qiang.uk/2022/12/26/%E9%9A%8F%E6%9C%BA%E5%9B%BE%E7%89%87api/</guid>
+      <description>一、api整合 樱道 网站：https://img.r10086.com/ 调用地址： 二次元动漫(1-18)：https://api.r10086</description>
+    </item>
+  </channel>
 </rss>

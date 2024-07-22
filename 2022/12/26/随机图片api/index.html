@@ -1,135 +1,252 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="robots" content="noodp" />
-        <title>随机图片api - 远望世界&#39; Blog</title><meta name="Description" content="远望世界&#39; Blog"><meta property="og:url" content="https://blog.qiang.uk/2022/12/26/%E9%9A%8F%E6%9C%BA%E5%9B%BE%E7%89%87api/">
-  <meta property="og:site_name" content="远望世界&#39; Blog">
-  <meta property="og:title" content="随机图片api">
-  <meta property="og:description" content="一、api整合 樱道 网站：https://img.r10086.com/ 调用地址： 二次元动漫(1-18)：https://api.r10086">
-  <meta property="og:locale" content="zh_CN">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2022-12-26T00:00:00+00:00">
-    <meta property="article:modified_time" content="2022-12-26T00:00:00+00:00">
-    <meta property="article:tag" content="图片api">
-    <meta property="og:image" content="https://blog.qiang.uk/icons/avatar.png">
+<html lang="zh" dir="auto">
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://blog.qiang.uk/icons/avatar.png">
-  <meta name="twitter:title" content="随机图片api">
-  <meta name="twitter:description" content="一、api整合 樱道 网站：https://img.r10086.com/ 调用地址： 二次元动漫(1-18)：https://api.r10086">
-<meta name="application-name" content="远望世界&#39; Blog">
-<meta name="apple-mobile-web-app-title" content="远望世界&#39; Blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/icons/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png"><link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/icons/site.webmanifest"><link rel="canonical" href="https://blog.qiang.uk/2022/12/26/%E9%9A%8F%E6%9C%BA%E5%9B%BE%E7%89%87api/" /><link rel="prev" href="https://blog.qiang.uk/2022/07/01/nginx%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/" /><link rel="next" href="https://blog.qiang.uk/2022/12/27/css3%E6%AF%9B%E7%8E%BB%E7%92%83%E6%95%88%E6%9E%9C/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>随机图片api | 远望世界&#39; Blog</title>
+<meta name="keywords" content="图片api">
+<meta name="description" content="一、api整合 樱道 网站：https://img.r10086.com/ 调用地址： 二次元动漫(1-18)：https://api.r10086">
+<meta name="author" content="远望世界">
+<link rel="canonical" href="https://blog.qiang.uk/2022/12/26/%E9%9A%8F%E6%9C%BA%E5%9B%BE%E7%89%87api/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://blog.qiang.uk/icons/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://blog.qiang.uk/icons/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://blog.qiang.uk/icons/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://blog.qiang.uk/icons/fapple-touch-icon.png">
+<link rel="mask-icon" href="https://blog.qiang.uk/icons/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="https://blog.qiang.uk/2022/12/26/%E9%9A%8F%E6%9C%BA%E5%9B%BE%E7%89%87api/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  
+
+<meta property="og:title" content="随机图片api" />
+<meta property="og:description" content="一、api整合 樱道 网站：https://img.r10086.com/ 调用地址： 二次元动漫(1-18)：https://api.r10086" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.qiang.uk/2022/12/26/%E9%9A%8F%E6%9C%BA%E5%9B%BE%E7%89%87api/" />
+<meta property="og:image" content="https://blog.qiang.uk/icons/avatar.png" />
+<meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-12-26T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-12-26T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://blog.qiang.uk/icons/avatar.png" />
+<meta name="twitter:title" content="随机图片api"/>
+<meta name="twitter:description" content="一、api整合 樱道 网站：https://img.r10086.com/ 调用地址： 二次元动漫(1-18)：https://api.r10086"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
     {
-        "@context": "http://schema.org",
-        "@type": "BlogPosting",
-        "headline": "随机图片api",
-        "inLanguage": "zh-CN",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https:\/\/blog.qiang.uk\/2022\/12\/26\/%E9%9A%8F%E6%9C%BA%E5%9B%BE%E7%89%87api\/"
-        },"genre": "posts","keywords": "图片api","wordcount":  2790 ,
-        "url": "https:\/\/blog.qiang.uk\/2022\/12\/26\/%E9%9A%8F%E6%9C%BA%E5%9B%BE%E7%89%87api\/","datePublished": "2022-12-26T00:00:00+00:00","dateModified": "2022-12-26T00:00:00+00:00","publisher": {
-            "@type": "Organization",
-            "name": ""},"author": {
-                "@type": "Person",
-                "name": "远望世界"
-            },"description": ""
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://blog.qiang.uk/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "随机图片api",
+      "item": "https://blog.qiang.uk/2022/12/26/%E9%9A%8F%E6%9C%BA%E5%9B%BE%E7%89%87api/"
     }
-    </script></head>
-    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "随机图片api",
+  "name": "随机图片api",
+  "description": "一、api整合 樱道 网站：https://img.r10086.com/ 调用地址： 二次元动漫(1-18)：https://api.r10086",
+  "keywords": [
+    "图片api"
+  ],
+  "articleBody": "一、api整合 樱道 网站：https://img.r10086.com/\n调用地址： 二次元动漫(1-18)：https://api.r10086.com/img-api.php?type=动漫综合1 东京食尸鬼(横竖屏)：https://api.r10086.com/img-api.php?type=东京食尸鬼横屏系列1 Fate(横竖屏)：https://api.r10086.com/img-api.php?type=Fate横屏系列1 为美好世界献上祝福(横竖屏)：https://api.r10086.com/img-api.php?type=为美好世界献上祝福横屏系列1 某科学的超电磁炮(横竖屏)：https://api.r10086.com/img-api.php?type=某科学的超电磁炮横屏系列1 原神(横竖屏)：https://api.r10086.com/img-api.php?type=原神横屏系列1 我的世界：https://api.r10086.com/img-api.php?type=我的世界系列1 神奇宝贝(横竖屏)：https://api.r10086.com/img-api.php?type=神奇宝贝横屏系列1 龙珠(横竖屏)：https://api.r10086.com/img-api.php?type=龙珠横屏系列1 罪恶王冠(横竖屏)：https://api.r10086.com/img-api.php?type=罪恶王冠横屏系列1 鬼灭之刃(横竖屏)：https://api.r10086.com/img-api.php?type=鬼灭之刃横屏系列1 火影忍者(横竖屏)：https://api.r10086.com/img-api.php?type=火影忍者横屏系列1 海贼王(横竖屏)：https://api.r10086.com/img-api.php?type=海贼王横屏系列1 进击的巨人(横竖屏)：https://api.r10086.com/img-api.php?type=进击的巨人横屏系列1 从零开始的异世界生活(横竖屏)：https://api.r10086.com/img-api.php?type=从零开始的异世界生活横屏系列1 刀剑神域(横竖屏)：https://api.r10086.com/img-api.php?type=刀剑神域横屏系列1 钢之炼金术师(横竖屏)：https://api.r10086.com/img-api.php?type=钢之炼金术师横屏系列1 妖精的尾巴(横竖屏)：https://api.r10086.com/img-api.php?type=妖精的尾巴横屏系列1 缘之空(横竖屏)：https://api.r10086.com/img-api.php?type=缘之空横屏系列1 东方project：https://api.r10086.com/img-api.php?type=东方project1 猫娘：https://api.r10086.com/img-api.php?type=猫娘1 风景(1-10)：https://api.r10086.com/img-api.php?type=风景系列1 物语(1-2)：https://api.r10086.com/img-api.php?type=物语系列1 少女前线：https://api.r10086.com/img-api.php?type=少女前线1 明日方舟(1-2)：https://api.r10086.com/img-api.php?type=明日方舟1 重装战姬：https://api.r10086.com/img-api.php?type=重装战姬1 P站(1-4)：https://api.r10086.com/img-api.php?type=P站系列1 CG(1-5)：https://api.r10086.com/img-api.php?type=CG系列1 守望先锋：https://api.r10086.com/img-api.php?type=守望先锋 王者荣耀：https://api.r10086.com/img-api.php?type=王者荣耀 少女写真(1-6)：https://api.r10086.com/img-api.php?type=少女写真1 死库水萝莉：https://api.r10086.com/img-api.php?type=死库水萝莉 萝莉：https://api.r10086.com/img-api.php?type=萝莉 极品美女图片：https://api.r10086.com/img-api.php?type=极品美女图片 日本COS中国COS：https://api.r10086.com/img-api.php?type=日本COS中国COS 橘里橘气(横竖屏)：https://api.r10086.com/img-api.php?type=橘里橘气横屏系列1 保罗 网站：https://api.paugram.com/help/wallpaper\n调用地址：https://api.paugram.com/wallpaper/ 东方Project 调用地址：https://img.paulzzh.com/touhou/random likepoems随机图 网站：https://api.likepoems.com/\n调用地址： 二次元PC壁纸：https://api.likepoems.com/img/pc 二次元PE壁纸：https://api.likepoems.com/img/pe mc酱壁纸：https://api.likepoems.com/img/mc pixiv壁纸：https://api.likepoems.com/img/pixiv nature壁纸：https://api.likepoems.com/img/nature 必应壁纸：https://api.likepoems.com/img/bing 二、怎么自制随机图 准备图片—\u003e书写路径—\u003e书写php文件 在img文件夹里新建img.txt，文件中直接写图片的URL地址，如： https://static.likepoems.com/2020/10/06/385ea1c4c8b4fbac57f5a0aa61f033761.jpg https://static.likepoems.com/2021/06/12/20210126104630786.png 新建index.php文件。文件内容如下： \u003c?php //存放api随机图链接的文件名img.txt $filename = \"img.txt\"; if(!file_exists($filename)){ die('文件不存在'); } //从文本获取链接 $pics = []; $fs = fopen($filename, \"r\"); while(!feof($fs)){ $line=trim(fgets($fs)); if($line!=''){ array_push($pics, $line); } } //从数组随机获取链接 $pic = $pics[array_rand($pics)]; //返回指定格式 $type=$_GET['type']; switch($type){ //JSON返回 case 'json': header('Content-type:text/json'); die(json_encode(['pic'=\u003e$pic])); default: die(header(\"Location: $pic\")); } ?\u003e 然后放在服务器里面的api文件夹里，绑定域名，记得开启php环境 访问路径：你的域名/api/img ",
+  "wordCount" : "2755",
+  "inLanguage": "zh",
+  "image": "https://blog.qiang.uk/icons/avatar.png","datePublished": "2022-12-26T00:00:00Z",
+  "dateModified": "2022-12-26T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "远望世界"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://blog.qiang.uk/2022/12/26/%E9%9A%8F%E6%9C%BA%E5%9B%BE%E7%89%87api/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "远望世界' Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://blog.qiang.uk/icons/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
 
-        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
-    <div class="header-wrapper">
-        <div class="header-title">
-            <a href="/" title="远望世界&#39; Blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>远望世界&#39; Blog</a>
-        </div>
-        <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/"> 主页 </a><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://memo.qiang.uk/" rel="noopener noreffer" target="_blank"> 📝随记 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
-                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
-                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
-                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-desktop">
-                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
-                        </span>
-                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
-                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-                </a></div>
-        </div>
-    </div>
-</header><header class="mobile" id="header-mobile">
-    <div class="header-container">
-        <div class="header-wrapper">
-            <div class="header-title">
-                <a href="/" title="远望世界&#39; Blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>远望世界&#39; Blog</a>
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://blog.qiang.uk/" accesskey="h" title="远望世界&#39; Blog (Alt + H)">远望世界&#39; Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
-            <div class="menu-toggle" id="menu-toggle-mobile">
-                <span></span><span></span><span></span>
-            </div>
         </div>
-        <div class="menu" id="menu-mobile"><div class="search-wrapper">
-                    <div class="search mobile" id="search-mobile">
-                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
-                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
-                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-mobile">
-                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
-                        </span>
-                    </div>
-                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
-                        取消
-                    </a>
-                </div><a class="menu-item" href="/" title="">主页</a><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://memo.qiang.uk/" title="" rel="noopener noreffer" target="_blank">📝随记</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
-                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-            </a></div>
-    </div>
-</header><div class="search-dropdown desktop">
-        <div id="search-dropdown-desktop"></div>
-    </div>
-    <div class="search-dropdown mobile">
-        <div id="search-dropdown-mobile"></div>
-    </div><main class="main">
-                <div class="container"><div class="toc" id="toc-auto">
-            <h2 class="toc-title">目录</h2>
-            <div class="toc-content always-active" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">随机图片api</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="https://github.com/yuanwangshijie" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>远望世界</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E5%B7%A5%E5%85%B7/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>工具</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-12-26">2022-12-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 2790 字&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 6 分钟&nbsp;</div>
-        </div><div class="details toc" id="toc-static"  data-kept="">
-                <div class="details-summary toc-title">
-                    <span>目录</span>
-                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
-                </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
-  <ul>
-    <li><a href="#一api整合">一、api整合</a>
-      <ul>
-        <li><a href="#樱道">樱道</a></li>
-        <li><a href="#保罗">保罗</a></li>
-        <li><a href="#东方project">东方Project</a></li>
-        <li><a href="#likepoems随机图">likepoems随机图</a></li>
-      </ul>
-    </li>
-    <li><a href="#二怎么自制随机图">二、怎么自制随机图</a></li>
-  </ul>
-</nav></div>
-            </div><div class="content" id="content"><h2 id="一api整合">一、api整合</h2>
-<h3 id="樱道">樱道</h3>
+        <ul id="menu">
+            <li>
+                <a href="https://blog.qiang.uk/posts" title="主页">
+                    <span>主页</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.qiang.uk/search" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.qiang.uk/categories" title="分类">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.qiang.uk/tags" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.qiang.uk/archives" title="归档">
+                    <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://memo.qiang.uk/" title="随记">
+                    <span>随记</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://blog.qiang.uk/">主页</a>&nbsp;»&nbsp;<a href="https://blog.qiang.uk/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      随机图片api
+    </h1>
+    <div class="post-meta"><span title='2022-12-26 00:00:00 +0000 UTC'>十二月 26, 2022</span>&nbsp;·&nbsp;6 分钟&nbsp;·&nbsp;远望世界&nbsp;|&nbsp;<a href="https://github.com/yuanwangshijie/hugo-blog/tree/main/content/posts/2022/%e9%9a%8f%e6%9c%ba%e5%9b%be%e7%89%87api%e6%8e%a5%e5%8f%a3.md" rel="noopener noreferrer" target="_blank">编辑此页</a>
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目录</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e4%b8%80api%e6%95%b4%e5%90%88" aria-label="一、api整合">一、api整合</a><ul>
+                        
+                <li>
+                    <a href="#%e6%a8%b1%e9%81%93" aria-label="樱道">樱道</a></li>
+                <li>
+                    <a href="#%e4%bf%9d%e7%bd%97" aria-label="保罗">保罗</a></li>
+                <li>
+                    <a href="#%e4%b8%9c%e6%96%b9project" aria-label="东方Project">东方Project</a></li>
+                <li>
+                    <a href="#likepoems%e9%9a%8f%e6%9c%ba%e5%9b%be" aria-label="likepoems随机图">likepoems随机图</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e4%ba%8c%e6%80%8e%e4%b9%88%e8%87%aa%e5%88%b6%e9%9a%8f%e6%9c%ba%e5%9b%be" aria-label="二、怎么自制随机图">二、怎么自制随机图</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h2 id="一api整合">一、api整合<a hidden class="anchor" aria-hidden="true" href="#一api整合">#</a></h2>
+<h3 id="樱道">樱道<a hidden class="anchor" aria-hidden="true" href="#樱道">#</a></h3>
 <blockquote>
 <p>网站：https://img.r10086.com/</p>
 </blockquote>
@@ -172,18 +289,18 @@
 <li>日本COS中国COS：https://api.r10086.com/img-api.php?type=日本COS中国COS</li>
 <li>橘里橘气(横竖屏)：https://api.r10086.com/img-api.php?type=橘里橘气横屏系列1</li>
 </ul>
-<h3 id="保罗">保罗</h3>
+<h3 id="保罗">保罗<a hidden class="anchor" aria-hidden="true" href="#保罗">#</a></h3>
 <blockquote>
 <p>网站：https://api.paugram.com/help/wallpaper</p>
 </blockquote>
 <ul>
 <li>调用地址：https://api.paugram.com/wallpaper/</li>
 </ul>
-<h3 id="东方project">东方Project</h3>
+<h3 id="东方project">东方Project<a hidden class="anchor" aria-hidden="true" href="#东方project">#</a></h3>
 <ul>
 <li>调用地址：https://img.paulzzh.com/touhou/random</li>
 </ul>
-<h3 id="likepoems随机图">likepoems随机图</h3>
+<h3 id="likepoems随机图">likepoems随机图<a hidden class="anchor" aria-hidden="true" href="#likepoems随机图">#</a></h3>
 <blockquote>
 <p>网站：https://api.likepoems.com/</p>
 </blockquote>
@@ -196,62 +313,17 @@
 <li>nature壁纸：https://api.likepoems.com/img/nature</li>
 <li>必应壁纸：https://api.likepoems.com/img/bing</li>
 </ul>
-<h2 id="二怎么自制随机图">二、怎么自制随机图</h2>
+<h2 id="二怎么自制随机图">二、怎么自制随机图<a hidden class="anchor" aria-hidden="true" href="#二怎么自制随机图">#</a></h2>
 <ol>
 <li>准备图片—&gt;书写路径—&gt;书写php文件</li>
 <li>在img文件夹里新建img.txt，文件中直接写图片的URL地址，如：</li>
 </ol>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">https://static.likepoems.com/2020/10/06/385ea1c4c8b4fbac57f5a0aa61f033761.jpg
-</span></span><span class="line"><span class="cl">https://static.likepoems.com/2021/06/12/20210126104630786.png
-</span></span></code></pre></td></tr></table>
-</div>
-</div><ol start="3">
+<pre tabindex="0"><code>https://static.likepoems.com/2020/10/06/385ea1c4c8b4fbac57f5a0aa61f033761.jpg
+https://static.likepoems.com/2021/06/12/20210126104630786.png
+</code></pre><ol start="3">
 <li>新建index.php文件。文件内容如下：</li>
 </ol>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
-</span><span class="lnt">32
-</span><span class="lnt">33
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
 </span></span><span class="line"><span class="cl"><span class="c1">//存放api随机图链接的文件名img.txt
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$filename</span> <span class="o">=</span> <span class="s2">&#34;img.txt&#34;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">file_exists</span><span class="p">(</span><span class="nv">$filename</span><span class="p">)){</span>
@@ -284,49 +356,219 @@
 </span></span><span class="line"><span class="cl">    <span class="k">die</span><span class="p">(</span><span class="nx">header</span><span class="p">(</span><span class="s2">&#34;Location: </span><span class="si">$pic</span><span class="s2">&#34;</span><span class="p">));</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><ol start="4">
+</span></span></span></code></pre></div><ol start="4">
 <li>然后放在服务器里面的api文件夹里，绑定域名，记得开启php环境</li>
 <li>访问路径：你的域名/api/img</li>
 </ol>
-</div><div class="post-footer" id="post-footer">
-    <div class="post-info">
-        <div class="post-info-line">
-            <div class="post-info-mod">
-                <span>更新于 2022-12-26</span>
-            </div></div>
-        <div class="post-info-line">
-            <div class="post-info-md"><span>
-                            <a class="link-to-markdown" href="/2022/12/26/%E9%9A%8F%E6%9C%BA%E5%9B%BE%E7%89%87api/index.md" target="_blank">阅读原始文档</a>
-                        </span></div>
-            <div class="post-info-share">
-                <span></span>
-            </div>
-        </div>
-    </div>
 
-    <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E5%9B%BE%E7%89%87api/">图片api</a></section>
-        <section>
-            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
-        </section>
-    </div>
 
-    <div class="post-nav"><a href="/2022/07/01/nginx%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/" class="prev" rel="prev" title="Nginx详细教程"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Nginx详细教程</a>
-            <a href="/2022/12/27/css3%E6%AF%9B%E7%8E%BB%E7%92%83%E6%95%88%E6%9E%9C/" class="next" rel="next" title="CSS3毛玻璃效果">CSS3毛玻璃效果<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
-</div>
-</article></div>
-            </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.129.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
-                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/yuanwangshijie" target="_blank">远望世界</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
-        </div>
-    </footer></div>
+  </div>
 
-        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
-                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
-            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
-                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
-            </a>
-        </div><link rel="stylesheet" href="/lib/lightgallery/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.stemmer.support.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.zh.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/twemoji/twemoji.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/mhchem.min.js"></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","lunrLanguageCode":"zh","lunrSegmentitURL":"/lib/lunr/lunr.segmentit.js","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"lunr"},"twemoji":true};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://blog.qiang.uk/tags/%E5%9B%BE%E7%89%87api/">图片api</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://blog.qiang.uk/2022/12/27/css3%E6%AF%9B%E7%8E%BB%E7%92%83%E6%95%88%E6%9E%9C/">
+    <span class="title">« 上一页</span>
+    <br>
+    <span>CSS3毛玻璃效果</span>
+  </a>
+  <a class="next" href="https://blog.qiang.uk/2022/07/01/nginx%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/">
+    <span class="title">下一页 »</span>
+    <br>
+    <span>Nginx详细教程</span>
+  </a>
+</nav>
+
+
+<ul class="share-buttons">
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share 随机图片api on x"
+            href="https://x.com/intent/tweet/?text=%e9%9a%8f%e6%9c%ba%e5%9b%be%e7%89%87api&amp;url=https%3a%2f%2fblog.qiang.uk%2f2022%2f12%2f26%2f%25E9%259A%258F%25E6%259C%25BA%25E5%259B%25BE%25E7%2589%2587api%2f&amp;hashtags=%e5%9b%be%e7%89%87api">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share 随机图片api on linkedin"
+            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fblog.qiang.uk%2f2022%2f12%2f26%2f%25E9%259A%258F%25E6%259C%25BA%25E5%259B%25BE%25E7%2589%2587api%2f&amp;title=%e9%9a%8f%e6%9c%ba%e5%9b%be%e7%89%87api&amp;summary=%e9%9a%8f%e6%9c%ba%e5%9b%be%e7%89%87api&amp;source=https%3a%2f%2fblog.qiang.uk%2f2022%2f12%2f26%2f%25E9%259A%258F%25E6%259C%25BA%25E5%259B%25BE%25E7%2589%2587api%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share 随机图片api on reddit"
+            href="https://reddit.com/submit?url=https%3a%2f%2fblog.qiang.uk%2f2022%2f12%2f26%2f%25E9%259A%258F%25E6%259C%25BA%25E5%259B%25BE%25E7%2589%2587api%2f&title=%e9%9a%8f%e6%9c%ba%e5%9b%be%e7%89%87api">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share 随机图片api on facebook"
+            href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fblog.qiang.uk%2f2022%2f12%2f26%2f%25E9%259A%258F%25E6%259C%25BA%25E5%259B%25BE%25E7%2589%2587api%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share 随机图片api on whatsapp"
+            href="https://api.whatsapp.com/send?text=%e9%9a%8f%e6%9c%ba%e5%9b%be%e7%89%87api%20-%20https%3a%2f%2fblog.qiang.uk%2f2022%2f12%2f26%2f%25E9%259A%258F%25E6%259C%25BA%25E5%259B%25BE%25E7%2589%2587api%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share 随机图片api on telegram"
+            href="https://telegram.me/share/url?text=%e9%9a%8f%e6%9c%ba%e5%9b%be%e7%89%87api&amp;url=https%3a%2f%2fblog.qiang.uk%2f2022%2f12%2f26%2f%25E9%259A%258F%25E6%259C%25BA%25E5%259B%25BE%25E7%2589%2587api%2f">
+            <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share 随机图片api on ycombinator"
+            href="https://news.ycombinator.com/submitlink?t=%e9%9a%8f%e6%9c%ba%e5%9b%be%e7%89%87api&u=https%3a%2f%2fblog.qiang.uk%2f2022%2f12%2f26%2f%25E9%259A%258F%25E6%259C%25BA%25E5%259B%25BE%25E7%2589%2587api%2f">
+            <svg version="1.1" xml:space="preserve" width="30px" height="30px" viewBox="0 0 512 512" fill="currentColor"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+                <path
+                    d="M449.446 0C483.971 0 512 28.03 512 62.554L512 449.446C512 483.97 483.97 512 449.446 512L62.554 512C28.03 512 0 483.97 0 449.446L0 62.554C0 28.03 28.029 0 62.554 0L449.446 0ZM183.8767 87.9921H121.8427L230.6673 292.4508V424.0079H281.3328V292.4508L390.1575 87.9921H328.1233L256 238.2489z" />
+            </svg>
+        </a>
+    </li>
+</ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>© <a href="https://blog.qiang.uk/">远望世界</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '复制';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已复制！';
+            setTimeout(() => {
+                copybutton.innerHTML = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
 </html>

@@ -1,16 +1,25 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>MybatisPlus - 标签 - 远望世界&#39; Blog</title>
-        <link>https://blog.qiang.uk/tags/mybatisplus/</link>
-        <description>MybatisPlus - 标签 - 远望世界&#39; Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>yuanwangshijie@gmail.com (远望世界)</managingEditor>
-            <webMaster>yuanwangshijie@gmail.com (远望世界)</webMaster><lastBuildDate>Wed, 01 Jun 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://blog.qiang.uk/tags/mybatisplus/" rel="self" type="application/rss+xml" /><item>
-    <title>MybatisPlus条件构造器</title>
-    <link>https://blog.qiang.uk/2022/06/01/mybatisplus%E6%9D%A1%E4%BB%B6%E6%9E%84%E9%80%A0%E5%99%A8/</link>
-    <pubDate>Wed, 01 Jun 2022 00:00:00 &#43;0000</pubDate>
-    <author>远望世界</author>
-    <guid>https://blog.qiang.uk/2022/06/01/mybatisplus%E6%9D%A1%E4%BB%B6%E6%9E%84%E9%80%A0%E5%99%A8/</guid>
-    <description><![CDATA[本文转自：https://blog.csdn.net/bird_tp/article/details/105587582 看本博客有不清晰的地]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>MybatisPlus on 远望世界&#39; Blog</title>
+    <link>https://blog.qiang.uk/tags/mybatisplus/</link>
+    <description>Recent content in MybatisPlus on 远望世界&#39; Blog</description>
+    <image>
+      <title>远望世界&#39; Blog</title>
+      <url>https://blog.qiang.uk/icons/avatar.png</url>
+      <link>https://blog.qiang.uk/icons/avatar.png</link>
+    </image>
+    <generator>Hugo -- 0.129.0</generator>
+    <language>zh</language>
+    <copyright>远望世界</copyright>
+    <lastBuildDate>Wed, 01 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.qiang.uk/tags/mybatisplus/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MybatisPlus条件构造器</title>
+      <link>https://blog.qiang.uk/2022/06/01/mybatisplus%E6%9D%A1%E4%BB%B6%E6%9E%84%E9%80%A0%E5%99%A8/</link>
+      <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://blog.qiang.uk/2022/06/01/mybatisplus%E6%9D%A1%E4%BB%B6%E6%9E%84%E9%80%A0%E5%99%A8/</guid>
+      <description>本文转自：https://blog.csdn.net/bird_tp/article/details/105587582 看本博客有不清晰的地</description>
+    </item>
+  </channel>
 </rss>
